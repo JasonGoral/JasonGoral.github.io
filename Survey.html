@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<style>
+	
+
+	#main 	{
+		width: 100%;
+		height: auto;
+		display: block;
+		background-color: blue;
+			}
+	
+		#title  {
+		text-align: center;
+		font-size: 22px;
+		margin-bottom: 50px;
+		margin-top:20px;
+		padding-top: 40px;
+		font-family: impact, charcoal, geneva, sans-serif;
+		font-weight: 400
+		
+
+		
+		
+		}
+
+	#description	{
+		text-align: center;
+		font-family: impact, charcoal, geneva, sans-serif;
+		font-weight: 600
+		font-size: .45em;
+
+	}
+
+	#survey-form	{
+
+		display: inline-block;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: left;
+		font-family: impact, charcoal, geneva, sans-serif;
+		font-weight: 600
+		font-size: .45em;
+
+	}
+
+	#legend	{
+		background-color: yellow;
+		border: 20px blue;
+		padding: 40px;
+		border-radius: 10%;
+		box-shadow: 10px 25px 30px 0px black;
+		margin-bottom: 30px;
+
+
+	}
+
+	#name	{
+
+	}
+
+	#email	{
+
+	}
+
+	#number	{
+
+	}
+
+	#name-label	{
+
+	}
+
+	#email-label	{
+
+	}
+
+	#number-label	{
+
+	}
+
+	#dropdown	{
+		
+	}
+
+	#formcenter		{
+		display: block;
+		text-align: center;
+		border: 25px red;
+		
+
+	}
+
+	.formele  {
+		margin-top: 5px;
+		margin-bottom: 30px;
+		font-family: impact, charcoal, geneva, sans-serif;
+		font-weight: 600
+		font-size: .45em;
+
+
+
+	}	
+
+	input[type="text"] 	{
+		background-color: lightblue;
+		border-radius: 7px;
+		text-align: left;
+	}
+	
+	input[type="number"]	{
+		background-color: lightblue;
+		border-radius: 7px;
+		width: 40%;
+
+	}
+
+	input[type="dropdown"]
+
+</style>
+<head>
+	<title> survey form </title>
+</head>
+<body>
+<div id="main">
+	<h1 id="title">A Quick Questionaire for Research Purposes</h1>
+	<p id="description">Please provide your answers and submit with the bottom button </p>
+<div id="formcenter">
+	<form id="survey-form" action="https//:www.notreal.ca"
+							onsubmit="return validateform(please check answers and make more sense)">
+	<legend id=legend>
+		How cute is Luka? (1-10)<br>
+		<input type="number" class="formele" id="number" name="favorite-number" placeholder = "10 for sure!" min="1" max="10"><br>
+		Would you babysit Luka? Please? (<strong>yes</strong> or no)<br>
+		<input type="radio"  name="yes" value="yes" >  Yes<br>
+		<input type="radio"  name="no" value="no">  No<br><br>
+		If yes what hours and days are you available? <br>If no, why not? <br>
+		<input type="text" class="formele" name="lastname" placeholder="always" ="last" id="name-label"> <br>
+		What experience do you have with small people? <br>(eg. diaper changing,<br>
+		 <input type="text" class="formele" name="experience" placeholder="no experience nessesary" ="last" id="experience"> <br>
+		
+		Email:
+		<br><input type="text" class="formele" id="email" name="email" placeholder="your.email.ca"><br>
+		
+		
+		<input  type="submit" name=submit class="formele" value=submit><br>
+	</legend>
+	</form>	
+		
+</div>
+</div>		
+</body>
+</html>
