@@ -8,28 +8,38 @@
 		height: auto;
 		display: block;
 		background-color: blue;
+		border-style: double;
+		border-color: black;
+		border-width: 15px;
+
 			}
 	
 		#title  {
+			width:auto;
+		display: block;
+		border-style: double;
+		padding: 20px;
+		margin-left: 50px;
+		margin-right: 50px;
+		background-color: yellow;
+		box-shadow: 10px 25px 30px 0px black;
 		text-align: center;
 		font-size: 22px;
-		margin-bottom: 50px;
-		margin-top:20px;
-		padding-top: 40px;
+		
+		
+		
 		font-family: impact, charcoal, geneva, sans-serif;
 		font-weight: 400
-		
-
-		
-		
 		}
 
 	#description	{
+		
+	
 		text-align: center;
 		font-family: impact, charcoal, geneva, sans-serif;
-		font-weight: 600
-		font-size: .45em;
-
+		font-weight: 200
+		font-size: .35em;
+		margin-top: 40px;
 	}
 
 	#survey-form	{
@@ -39,7 +49,7 @@
 		margin-right: auto;
 		text-align: left;
 		font-family: impact, charcoal, geneva, sans-serif;
-		font-weight: 600
+		font-weight: 200
 		font-size: .45em;
 
 	}
@@ -127,7 +137,7 @@
 	<p id="description">Please provide your answers and submit with the bottom button </p>
 <div id="formcenter">
 	<form id="survey-form" action="https//:www.notreal.ca"
-							onsubmit="return validateform(please check answers and make more sense)">
+							onsubmit="return validateform()">
 	<legend id=legend>
 		How cute is Luka? (1-10)<br>
 		<input type="number" class="formele" id="number" name="favorite-number" placeholder = "10 for sure!" min="1" max="10"><br>
@@ -136,11 +146,23 @@
 		<input type="radio"  name="no" value="no">  No<br><br>
 		If yes what hours and days are you available? <br>If no, why not? <br>
 		<input type="text" class="formele" name="lastname" placeholder="always" ="last" id="name-label"> <br>
-		What experience do you have with small people? <br>(eg. diaper changing,<br>
+		What experience do you have with small people? <br>(eg. diaper changing ect.)<br>
 		 <input type="text" class="formele" name="experience" placeholder="no experience nessesary" ="last" id="experience"> <br>
-		
+		What creature would you say is most like Luka?<br>
+		<input type="radio"  name="Bear" value="Bear" >  Bear<br>
+		<input type="radio"  name="Chipmonk" value="Chipmonk" >  Chipmonk<br>
+		<input type="radio"  name="Octopus" value="Octopus" >  Octopus<br>
+		<input type="radio"  name="Snake" value="Snake">  Snake<br><br>
+
+		Are you sensitive to loud noises, strong odors<br>or random stickyness?<br>
+		<input type="radio"  name="yes1" value="yes1" >  Yes<br>
+		<input type="radio"  name="no1" value="no1">  No<br>
+		<input type="radio"  name="nopoop" value="nopoop">  I don't touch poo<br><br>
+
+
+		<br>
 		Email:
-		<br><input type="text" class="formele" id="email" name="email" placeholder="your.email.ca"><br>
+		<br><input type="email" class="formele" id="email" name="email" placeholder="your.email.ca" aria-required= "true" required/><br>
 		
 		
 		<input  type="submit" name=submit class="formele" value=submit><br>
