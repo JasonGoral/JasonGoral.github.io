@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Meet the family</title>
+		
+	<style>
+
+#fullpage {
+			font-family: "trebuchet MS", helvetica, sans-serif;
+			}
+
+
+	p {
+		margin: 20px;
+		font-size: .85em;
+		font-weight: bold;
+	}
+	.offpage	{
+		text-indent: 40px;
+	}
+
+	.link  {
+			text-decoration: none;
+		}
+
+	.breaker  {
+		border-bottom: 2px solid black;
+		padding-top: 40px;
+	}	
+
+	#navbar   {
+			
+			margin: auto;
+	     	float: right;
+			z-index: 1;
+			font-size: 16px;
+			line-height:26px;
+			background-color: gold;
+			position: absolute;
+			top: 12px;
+			right: 0px;
+			width: auto;
+			height: auto;
+			margin-right: 18px;
+			border: 3px solid black;
+			border-radius: 10px;
+			padding: 10px;
+			
+			}	
+
+	.smallpiccenter	{
+		width: 200px;
+		height: 200px;
+		display: block;
+		margin: auto;
+		border: 3px solid black;
+		border-radius: 10px;
+		margin-top: 10px;
+		padding: 3px;
+	}
+
+
+	.lukagoralid
+		{
+			background-color: #ffccff;
+		}
+	.goralid   {
+		background-color: lightblue;
+
+	}
+
+	.chuid		{
+		background-color: #ffccff;
+	}
+
+	
+	#idcard	{
+		width:225px;
+		height: 400px;
+		border: 3px solid black;
+		border-radius: 10px;
+		box-shadow: 15px 15px 20px;
+		margin: 15px;
+		text-align: center;
+		}
+
+#mainimage  {
+			object-fit: cover;
+			object-position: left;
+		}
+	#parentheader {
+		padding-top: 15px;
+		text-indent: 30px;
+
+	}
+
+	#lukaheader  {
+		padding-top: 20px;
+		text-indent: 30px;
+	}
+
+	#grandheader  {
+		text-indent: 30px;
+
+
+	}
+	#secondsheader{
+
+	}
+
+	#backtotop  {
+		text-align: center;
+
+	}
+
+
+
+			/*flexwrappers*/
+	
+	#grandparents { 
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+	#parents { 
+		transform: scale(0.95);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+		align-content; top;
+	}
+	#lastgen {
+		transform: scale(0.9); 
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+		align-content: top;
+	}
+
+	/*end of flexwrappers*/
+
+
+
+	</style>
+
+		</head>
+	
+		
+		<body>
+	<div id="fullpage">
+<!--headerflexbox-->
+				<div id="header">
+
+					<div>
+					<img src="images/nathantrees.jpg" id=mainimage alt = "image of luka with jellyfish" width="100%" height="165" /> 
+					</div>
+
+				   
+						<ul id="navbar">
+							<a href="index.html" class="link">HOME</a><br>
+							<a href="products.html"class="link">Baby Gear</a><br>
+							<a href="#"class="link">Choice3</a><br>
+							<a href="#"class="link">Choice4</a><br>
+							<a href="#"class="link">Choice5</a>
+
+						
+						</ul>
+					
+				</div>	
+			<!--end of headerflexbox-->
+				
+			<p>Here is a quick rundown of the family tree.  Everyone is located somewhere in Ontario, Canada. This is still a partial list, more to come soon!<p>
+			<h2 id="grandheader">The Grandparents</h2><br>
+			<h3 class="offpage">Wisdom at its finest</h3>
+			<!--grandparents flexbox-->
+			<div id="grandparents">
+				<div id="idcard" class="chuid">
+					<img class="smallpiccenter" src="images/lukayi.jpg" alt="pic missing">
+					<h3>Yi Chu</h3>
+					<p>Yi enjoys his retirement by playing Majong and singing Kerioke, he is thrilled to have Luka as his first grandchild and is always excited to see the little guy.</p>
+				</div>
+
+				<div id="idcard" class="chuid">
+					<img class="smallpiccenter" src="images/agnusbirthday.jpg" alt="pic missing">
+					<h3>Agnus Chu</h3>
+					<p>Agnus is also retired and plays Majong with her husband and friends, she always enjoys time with Luka.</p>
+				</div>	
+
+				<div id="idcard" class="goralid">
+					<img class="smallpiccenter" src="images/gordlukaoutdoors.jpg" alt="pic missing">
+					<h3>Gordon Goral</h3>
+					<p>Gord enjoys outdoor activities such as riding his bikes and snowboarding. Luka is his fifth grandchild with one more since his birth making 6!</p>
+				</div>
+
+				<div id="idcard" class="goralid">
+					<img class="smallpiccenter" src="images/marylukaoutdoors.jpg" alt="pic missing">
+					<h3>Mary Goral</h3>
+					<p>Mary plays pickleball and enjoys spending time online with her twin sister Ruth.  Currently she is busy helping with toddlers and babies from her children.</p>
+				</div>
+
+			</div>	
+			<div class="breaker">
+			</div>
+			<!--end grandparents flexbox-->
+		<h2 id="parentheader">The Parents Generation</h2><br>
+		<h3 class="offpage"> Welcome to the Madhouse</h3>
+			<!--parents generation flexbox--->
+			<div id="parents">
+
+				<div id="idcard" class="chuid">
+					<img class="smallpiccenter" src="images/sarahlukarestraunt.jpg" alt="pic missing">
+					<h3>Sarah Pak </h3>
+					<p>Sarah is Micheals fiance and a welcome new addition to the family! She often sees Luka in the halls as Micheal and herself live in the same building.</p>
+				</div>
+
+				<div id="idcard" class="chuid">
+					<img class="smallpiccenter" src="images/michealsarahrest.jpg" alt="camera shy">
+					<h3>Micheal Chu</h3>
+					<p>Micheal works hard and plays even harder. He holds Luka as if he could explode at any time! (He's always smiling when Luka is around)</p>
+				</div>
+
+				<div id="idcard" class="chuid">
+					<img class="smallpiccenter" src="images/karenlukaflowers.jpg" alt="pic missing">
+					<h3>Karen Chu</h3>
+					<p>Karen gave birth to our subject and spends most of her time chasing him around the house lately. She loves him so much and it shows every day!</p>
+				</div>
+
+				<div id="idcard" class="goralid">
+					<img class="smallpiccenter" src="images/familysled.jpg" alt="pic missing">
+					<h3>Jason Goral</h3>
+					<p>Jason likes to drum and is learning to code in any free time that is left from also chasing Luka around. He loves to read and sing to his little guy.</p>
+				</div>
+
+
+				<div id="idcard" class= "goralid">
+					<img class="smallpiccenter" src="images/tanyalukahair.jpg" alt="pic missing">
+					<h3>Tanya Rizza</h3>
+					<p>Tanya works as a nurse where her clan is located in peterborough, she enjoys the outdoors like her father. Her three children keep her hopping.</p>
+				</div>		
+
+				<div id="idcard" class="goralid">
+					<img class="smallpiccenter" src="images/ryanlukaoutdoor.jpg" alt="pic missing">
+					<h3>Ryan Rizza</h3>
+					<p>Ryan is a carpenter like Jesus, he grills a fine steak and has a great sense of humor. He is great with Luka and loves to play around with him when we visit.
+					</p>				
+				</div>	
+
+				<div id="idcard" class="goralid">
+					<img class="smallpiccenter" src="images/maralukafunny.jpg" alt="pic missing">
+					<h3>Mara Rozario</h3>
+					<p>Mara is a mother of two and works as a Lab Technician, she loves Luka to death and visits us all the time as she loves the city. Noone can make a cupcake like Mara.</p>
+				</div>	
+
+				<div id="idcard" class="goralid">
+					<img class="smallpiccenter" src="images/steveviking.jpg" alt="pic missing">
+					<h3>Steve Rozario</h3>
+					<p>Steve likes computers and working out. He doesn't like rollercoaters or working night shifts.</p>
+				</div>									
+			</div>
+			<!-- end parents flexbox -->
+			<div class="breaker">
+			</div>
+		<h2 id="lukaheader">Lukas Generation</h2>
+		<h3 class ="offpage">Odds are one will have to be bailed out of jail at some point. Who will it be?</h3>
+			<!-- start lastgen flexbox -->
+			<div id="lastgen">
+
+				<div id="idcard" class="lukagoralid">
+					<img class="smallpiccenter" src="images/lukaamazed.jpg" alt="pic missing">
+					<h3>Luka Goral</h3>
+					<p>The star of the show! Did you know Lukas average land speed is equal to the african land tortise and he has the bite strength of a jackal?</p>
+				</div>	
+
+				<div id="idcard" class="goralid">
+					<img class="smallpiccenter" src="images/georgesmile.jpg" alt="pic missing">
+					<h3>George Rizza</h3>
+					<p>George is going through french immersion. He likes his video games and I have heard his ideas for a gym and they are quite interesting, deadly but interesting.</p>
+				</div>
+
+				<div id="idcard" class="goralid">
+					<img class="smallpiccenter" src="images/sunnyluka.jpg" alt="pic missing">
+					<h3>Sunny Rizza</h3>
+					<p>Sunny has more energy than the sun, I think thats how she got her name. She enjoys art projects and is always wanting to play with Luka when we are around.</p>
+				</div>
+
+				<div id="idcard" class="goralid">
+					<img class="smallpiccenter" src="images/esmefrog.jpg" alt="pic missing">
+					<h3>Esme Rizza</h3>
+					<p>Esme is growing up super fast. She always produces a hand drawn card for your birthdays and is quite the dancer!</p>
+				</div>
+
+				<div id="idcard" class="goralid">
+					<img class="smallpiccenter" src="images/novatoddler.jpg" alt="pic missing">
+					<h3>Nova Rosario</h3>
+					<p>Nova is just begining to run around and enjoys playing with her toys and napping. Being only nine months older than Luka they always have fun playing!</p>
+				</div>
+
+				<div id="idcard" class="goralid">
+					<img class="smallpiccenter" src="images/indigonewborn.jpg" alt="pic missing">
+					<h3>Indigo Rosario</h3>
+					<p>The newest addition to the family, Indigo was born a few days short of Lukas first birthday. He is the peanut butter in his aunt Maras' cousin sandwich. </p>
+				</div>		
+
+
+
+			</div>
+
+			<!-- end lastgen flexbox-->		
+<h2 id="secondsheader">Honerable Mentions</h2><br>
+			<h3 class="offpage">Second Cousins Aunts, Uncles ect..</h3>
+
+			<!--seconds flexbox-->
+
+
+			<p id=backtotop><a class=link href="#header">BACK TO TOP</a></p>
+	</div>
+		</body>
+	<html>
+

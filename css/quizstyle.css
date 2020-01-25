@@ -1,0 +1,98 @@
+#wholepage {
+	border: 3px solid black;
+	font-family: "Gill Sans", Helvetica, sans-serif;
+	background-color: darkblue;
+	color: white;
+}
+
+#answerBox {
+	height: 200px;
+	background-color: darkblue;
+	color: white;
+	font-size: 2em;
+
+
+
+}
+
+#topBanner	{
+	text-align: center;
+	margin: auto;
+}
+
+#topTitle	{
+	font-size: 2em;
+	color: yellow;
+
+
+}
+
+#outputBox	{
+	
+	background-color: darkblue;
+	color: white;
+}
+
+#roundUp	{
+	padding: 30px;
+	border-radius: 25px;
+	width: 100%;
+	border-color: red;
+}
+
+.qstnwrapper {
+	margin-top: 35px;
+	padding: 25px;
+	border: 3px solid black;
+	padding: 10px;
+	text-align: center;
+	border-radius: 25px;
+	background-color: darkgrey;
+}
+
+.flexbuttons  {
+	padding: 10px;
+	display: flex;
+
+	
+
+}
+
+.unpicked  {
+
+	margin: auto;
+	border: 5px dashed grey;
+	color: black;
+	width: 25%;
+	height: 15vh;
+	background-color: lightgrey;
+	border-radius: 25px;
+}
+
+.hot	{
+	
+	margin: auto;
+	border: 5px inset red;
+	color: darkblue;
+	width: 25%;
+	height: 15vh;
+	background-color: yellow;
+	border-radius: 25px;
+}
+
+.cold	{
+	
+	margin: auto;
+	border: 5px outset blue;
+	color: grey;
+	width: 25%;
+	height: 15vh;
+	background-color: lightblue;
+	border-radius: 25px;
+	
+}
+
+.target	{
+	margin: 10px;
+	padding: 10px;
+}

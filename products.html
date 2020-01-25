@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Product advise as we see it</title>
+	<style>
+
+	#fullpage {
+			font-family: "trebuchet MS", helvetica, sans-serif;
+			}
+
+	/*navigation*/			
+		#navbar   {
+			
+			margin: auto;
+	     	float: right;
+			z-index: 1;
+			font-size: 16px;
+			line-height:26px;
+			background-color: gold;
+			position: absolute;
+			top: 12px;
+			right: 0px;
+			width: auto;
+			height: auto;
+			margin-right: 18px;
+			border: 3px solid black;
+			border-radius: 10px;
+			padding: 10px;
+			
+
+
+			}
+
+		#header {
+			display: inline-flex;
+			margin: auto;
+			width: auto;
+			height: 180px;
+			justify-content: center;				
+		}	
+
+		#mainimage  {
+			object-fit: cover;
+			object-position: left;
+					}	
+
+	.link	{
+		text-decoration: none;
+	}
+	/*wrapper for good products*/
+	.yescontainer	{
+		flex: 1;
+		display:flex;
+		max-width: 1200px;
+		height: 200px;
+		align-items: center;
+		padding-bottom: 10px;
+		
+}
+/*wrapper for top part of page*/
+
+#maingridcon {
+			display:grid;
+		grid-template-columns: .3fr 200px 1fr;
+		grid-template-rows:  50px 200px 200px 200px 200px;
+		grid-template-areas: 
+			"explanation pictitle texttitle"
+			"explanation happypic happytext"
+			"explanation sadpic sadtext"
+			"explanation happyborder hptext"
+			"explanation sadborder sptext";
+		grid-gap: 10px;	
+		}
+
+		#explan  {
+			grid-area: explanation;
+			background-color: lightgrey;
+			overflow: hidden;
+			font-style: italic;
+		}
+
+		#happypic	{
+			grid-area: happypic;
+			display:block;
+			
+
+		}
+		#sadpic	{
+			grid-area: sadpic;
+			display:block;
+
+		}
+		#happyborder {
+			grid-area: happyborder;
+			height: 150px;
+			width: 150px;
+			border: 10px solid blue;
+			border-radius: 50%
+
+		}
+		#sadborder {
+			grid-area: sadborder;
+			height: 150px;
+			width: 150px;
+			border: 10px solid red;
+			border-radius: 50%
+		}
+		#pictitle	{
+			grid-area: pictitle;
+
+		}
+		#texttitle	{
+			grid-area: texttitle;
+		}
+	
+		#thumbnailcontent	{
+			display; flex;
+			flex-direction: row;
+
+		}
+		#depthreviews	{
+
+		}
+
+	.yespic   {
+		height: auto;
+		
+		
+	}
+
+	.protext {
+		padding:10px;
+		line-height: 25px;
+		font-size: .8em;
+		font-weight: bold; 
+		letter-spacing: .1em;
+		margin-left: 10px
+
+		
+
+	}
+
+	.context	{
+		padding:10px;
+		line-height: 25px;
+		font-size: .8em;
+		font-weight: bold; 
+		letter-spacing: .1em;
+		margin-left: 10px;
+		
+
+
+	}
+
+	.probox	{
+		flex: 1;
+		background-color: rgb(110 250 250);
+		font-weight: bold;
+		height: 200px;
+		overflow: hidden;
+
+	}
+
+	.conbox {
+		flex: 1;
+		background-color: rgb(250 250 110);
+		font-weight: bold;
+		height: 200px;
+		overflow: hidden;
+
+	}
+
+	.roundpic	{
+		border-radius: 50%;
+	}
+	.thumbtitle	{
+
+		}
+		.keytext	{
+			align-self:center;
+			margin-left: 20px
+
+
+
+		}
+		.happytext  {
+			
+		}
+
+		.yesyes	{
+			position: relative;
+			height: 60px;
+			width: 60px;
+			left: 30px;
+			bottom: 85px;
+			z-index: 2;
+			border: 3px solid blue;
+			border-radius: 50%;
+			margin-top: 0px;
+			margin-right: 0px;
+
+
+		}
+		.nono	{
+			position: relative;
+			height: 60px;
+			width: 60px;
+			left: 30px;
+			bottom: 85px;
+			z-index: 2;
+			border: 3px solid red;
+			border-radius: 50%;
+			margin-top: 0px;
+			margin-right: 0px;
+
+		}
+		
+		.depthcontainer	{
+			border: 3px solid grey;
+			border-radius: 10px;
+			padding: 10px;
+		}
+		.leftfloat	{
+			float: left;
+			height: 200px;
+			width:200px;
+			padding-right: 15px;
+
+		}
+		.indepthheader	{
+			color: blue;
+		}
+		.ratingbox	{
+			display: grid;
+			grid-template-columns: 1fr 2fr;
+			grid-template-rows: 75px 40px;
+			grid-template-areas:
+			 "name comment"
+			 "starrating starrating";
+			 max-width: 500px;
+			 border: 3px solid yellow;
+			 margin: auto;
+			}
+
+
+
+	</style>
+	
+		</head>
+		
+
+		<body>
+			<div id="fullpage">
+
+				<!--headerflexbox-->
+				<div id="header">
+
+					<div>
+					<img src="images/toys1.jpg" id=mainimage alt = "image of luka with jellyfish" width="100%" height="165" /> 
+					</div>
+
+				   
+						<ul id="navbar">
+							<a href="index.html" class="link">HOME</a><br>
+							<a href="familypage.html"class="link">Family</a><br>
+							<a href="#"class="link">Choice3</a><br>
+							<a href="#"class="link">Choice4</a><br>
+							<a href="#"class="link">Choice5</a>
+
+						
+						</ul>
+					
+				</div>	
+			<!--end of headerflexbox-->
+			<!--begin main gridbox-->
+			<div id="maingridcon">
+				<div id="explan">
+			<p>
+				When you have a kid your going to be buying a <strong>lot</strong> of items for your young one. Sometimes you end up with a great product that entertains and educates your kid or makes your life easier.  Other times you end up with products that underpreform, ending up as expensive clutter or worse yet are cheaply made that bread or are so flimsy you don't trust them to hold up.
+			<p>
+				This is just one familys opinion of how we found the gear that we bought for Luka, rating it on how much Luka seemed to enjoy it.  The value based on the cost verses how often we used it as well as any other features that stood out.
+				</p>		
+				</div>	
+			<div id="happypic">
+				<img src="images/lukaapproves.jpg" alt="img not found" class="roundpic">
+			</div>
+			<div id="sadpic">
+				<img src="images/lukacry.jpg" alt="img not found" class="roundpic">
+			</div>
+			<div id="happyborder">
+				
+			</div>
+			<div id="sadborder">
+				
+			</div>
+			<div id="pictitle">
+				<h2>When You See...</h2>
+			</div>	
+			<div id="texttitle">
+				<h2>...It Means</h2>
+			</div>
+			<div id="happytext">
+				<h1 class="keytext">Luka Approved</h1>
+			</div>
+			<div id="sadtext">
+				<h1>Luka Rejected</h1>
+			</div>
+			<div id="hptext">
+				<h1>Parents Approve</h1>
+			</div>
+			<div id="sptext">
+				<h1>Parents Dislike</h1>
+			</div>	
+		</div>	
+			<!--end of gridbox-->	
+
+			<!--container for yes or no box-->
+		<div id="thumbnailcont">	
+<h3 class=thumbtitle> Bob Revolution Flex 3.0 jogging stroller</h3>
+			<div class="yescontainer" id="bobstroller"><!--begin yes container-->
+
+			<!--tags for products-->
+				<img class="yesyes" src="images/lukaapproves.jpg">
+			
+
+			<div>	
+		<img class=yespic src="images/bobstroller.jpg" alt="pic gone">
+			</div>
+			
+			<div class="probox">	
+		<ul class="protext">
+			<li>You can jog with it</li>
+			<li>Great cargo room</li>
+			<li>Smooth ride</li>
+			
+		</ul>
+			</div>
+			
+			<div class="conbox">	
+			
+		<ul class=context>
+			<li>Barely fits through doors
+			<li>Doesn't travel in car well
+			<li>Need to pump tires bi-weekly
+			</ul>
+		    </div>
+
+
+		</div><!--end of yes container-->
+	<h3 class="thumbtitle">KidsEmbrace DC Comics Batman Deluxe High Chair</h3>	
+
+		<div class="yescontainer" id="batchair"><!--begin yes container-->
+			<img class="yesyes" src="images/lukaapproves.jpg">
+			<div>	
+		<img class=yespic src="images/batmanchair.jpg" alt="pic gone">
+			</div>
+			
+			<div class="probox">	
+		<ul class="protext">
+			<li>Can weigh down base<br>
+			<li>Sturdy and well built<br>
+			<li>Black hides the stains
+		</ul>
+			</div>
+			
+			<div class="conbox">	
+			
+		<ul class=context>
+			<li>Lower height adjustments are comical<br>
+			<li>Only comes with one tray topper<br>
+			<li>Black hides the spilled food
+			</ul>
+		    </div>
+
+
+		</div><!--end of yes container-->
+	<h3 class="thumbtitle">Paw Patroller</h3>		
+			<div class="yescontainer"><!--begin yes container-->
+				<img class="yesyes" src="images/lukaapproves.jpg">
+			<div>	
+		<img class=yespic src="images/pawpatroller.jpg" alt="pic gone">
+			</div>
+			
+			<div class="probox">	
+		<ul class="protext">
+			<li>Luka loves it!<br>
+			<li>Encouraged sit to stand<br>
+			<li>Makes child moble
+		</ul>
+			</div>
+			
+			<div class="conbox">	
+			
+		<ul class=context>
+			<li>Volume is on the loud side<br>
+			<li>Expensive compared to non branded<br>
+			<li>Can cause some tumbles
+			</ul>
+		    </div>
+
+
+		</div><!--end of yes container-->
+	<h3 class="thumbtitle">LILLE Baby Carrier</h3>	
+			<div class="yescontainer"><!--begin yes container-->
+				<img class="nono" src="images/lukaapproves.jpg">
+			<div>	
+		<img class=yespic src="images/babycarrier.jpg" alt="pic gone">
+			</div>
+			
+			<div class="probox">	
+		<ul class="protext">
+			<li>Secure Design<br>
+			<li>Weight on shoulders and waist<br>
+			<li>Hands free baby!
+		</ul>
+			</div>
+			
+			<div class="conbox">	
+			
+		<ul class=context>
+			<li>Difficult to load and unload<br>
+			<li>Expensive and rarely used<br>
+			<li>Luka hated it!
+			</ul>
+		    </div>
+
+
+		</div><!--end of yes container-->
+			
+				
+	</div> <!--end of the thumbnailcont-->	
+
+	<div id="depthreviews"> <!--start of the box for in depth reviews-->
+			<div class="depthcontainer"> <!--in depth review box-->
+				<img src="images/bobstroller.jpg" alt="pic not available" class="leftfloat">
+				<h2 class="indepthheader">B.O.B. Revolution Flex 3</h2>
+				<p> This is one of Jason's favorites, this bad boy is the SUV of strollers.  If people dont't move out of the way for you it moves them for you.  It has beefy shocks that have two settings to improve the stiffness for heavier kids, the best canopy I have seen on a stroller and with the large air filled wheels it will roll through and over almost anything.</p>
+
+				<p>There are also some accessories that are available spicifically for this stroller that are quite well done.  The weather shield fits very snugly over the child making the carrying area quite wind and rain proof.  We also liked the caddy that sits up near the parent for drinks and extra cargo, it came with a small pump for the tires that works well.  The final accessory we have is the child snack tray, it snaps on easily and holds snacks but it had an odd shaped hole for the childs sippy cup and once he was old enough to hold his own food it seemed like it was game over for this accesory and it has sat collecting dust since.</p>
+
+			<p>Some of the issues we have had with the stroller are as follows.  Th size is quite large, some elevators and store isles were not built to accomodate the width or turning radius of this stoller.  It will fit on the bus and streetcars but if you get stuck in the isle you are quite the roadblock.  The shock adjustment resets when you fold up the stroller, when you unfold it the default setting is up to 50lbs but once your child outgrows this weight you will have to reset the shocks every time you open up the stroller.  When you fold up the stroller for travel there is no automatic lock on the stoller to keep it from unfolding again, you have to loop a strap over the bar and then clip it on manually.  The size of the stroller collapsed is also quite large, we can fit it into our SUV trunk barely.(They allow you to easily take off the back two wheels to make more room side to side for smaller trunks but I would definatly measure before purchasing if you have anything other than a <strong>Huge</strong> trunk.)</p>
+
+			<p>The highlights of this product are the canopy, it covers your child down to the knees and there is always a setting to keep the sun off their face.  Also the peek-a-boo window in the top has magnetic locks on it and is very quiet when checking in on the passenger area.  The difference between pushing this stroller over any kind of rough terrain or piles of snow/sand and a regular stroller is night and day, you can roll over near anything without bouceing around your child and it makes going offroad or getting trough snow bank ridges a breeze.  Our second stroller is smaller and more nimble for trips in crowds but with the difference in the suspention and the weather sheild makes it a second choice most of the time, escpecially in the winter.  </p>
+
+		<div class="ratingbox"> <!-- container for ratings box-->
+
+		</div>
+	</div>
+
+		<div id="depthreviews"> <!--start of the box for in depth reviews-->
+
+
+		<div class="depthcontainer"> <!--in depth review box-->
+				<img src="images/batmanchair.jpg" alt="pic not available" class="leftfloat">
+				<h2 class="indepthheader">KidsEmbrace DC Comics Batman Deluxe High Chair</h2>
+				<p> The best and worst thing about this high chair is the colour.</p>
+
+				<p>Good stuff here</p>
+
+			<p>iffy stuff here</p>
+
+			<p>round up here  </p>
+
+		<div class="ratingbox"> <!-- container for ratings box-->	
+			
+		
+			</div><!--end of depth review box->	
+		<div id="depthreviews"> <!--start of the box for in depth reviews-->
+
+
+		<div class="depthcontainer"> <!--in depth review box-->
+				<img src="images/pawpatroller.jpg" alt="pic not available" class="leftfloat">
+				<h2 class="indepthheader">Paw Patrol Kids Ride-On Play Set</h2>
+				<p>Intro here</p>
+
+				<p>Good Stuff here</p>
+
+			<p>Iffy stuff here</p>
+
+			<p>Wrap it up  </p>
+
+		<div class="ratingbox"> <!-- container for ratings box-->	
+			
+		
+			</div><!--end of depth review box->	
+
+			<div id="depthreviews"> <!--start of the box for in depth reviews-->
+
+
+		<div class="depthcontainer"> <!--in depth review box-->
+				<img src="images/babycarrier.jpg" alt="pic not available" class="leftfloat">
+				<h2 class="indepthheader">LILLE Baby Carrier</h2>
+				<p> Intro here</p>
+
+				<p>Good stuff here.</p>
+
+			<p>iffy stuff here</p>
+
+			<p>wrap it up </p>
+
+		<div class="ratingbox"> <!-- container for ratings box-->	
+			
+		
+			</div><!--end of depth review box->	
+	</div>	
+		</body>
+	<html>
+
