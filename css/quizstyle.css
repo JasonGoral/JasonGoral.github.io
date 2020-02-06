@@ -6,7 +6,6 @@
 }
 
 #answerBox {
-	height: 200px;
 	background-color: darkblue;
 	color: white;
 	font-size: 2em;
@@ -28,7 +27,6 @@
 }
 
 #outputBox	{
-	
 	background-color: darkblue;
 	color: white;
 }
@@ -38,6 +36,8 @@
 	border-radius: 25px;
 	width: 100%;
 	border-color: red;
+	background-color: white;
+	font-size: 2em;
 }
 
 .qstnwrapper {
@@ -64,7 +64,6 @@
 	border: 5px dashed grey;
 	color: black;
 	width: 25%;
-	height: 15vh;
 	background-color: lightgrey;
 	border-radius: 25px;
 }
@@ -75,7 +74,6 @@
 	border: 5px inset red;
 	color: darkblue;
 	width: 25%;
-	height: 15vh;
 	background-color: yellow;
 	border-radius: 25px;
 }
@@ -86,7 +84,6 @@
 	border: 5px outset blue;
 	color: grey;
 	width: 25%;
-	height: 15vh;
 	background-color: lightblue;
 	border-radius: 25px;
 	
