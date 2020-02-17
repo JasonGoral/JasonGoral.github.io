@@ -1,0 +1,219 @@
+
+		/*for cell phones*/
+@media only screen and (max-width: 767px) {
+
+		#likedis	{
+			display: inline-block;
+
+			}
+		#favs  {
+			width: 100%;
+
+
+		}	
+
+		#hates {
+			width: 100%;
+		}
+
+		 #botpicbox {
+		 	display: inline;
+
+		 }
+
+		 .smallpic  {
+		 	width: 50%;
+		 	border: 5px solid black;
+			border-radius: 25px;
+		 }
+
+		 .largepic
+		  {
+		  	width: 100%;
+		  	border: 5px solid black;
+			border-radius: 25px;
+		  }
+							
+										  }
+
+			/*for larger than cellphones*/							  
+@media only screen and (min-width: 768px) 	{
+		
+		#likedis	{
+			display:grid;
+			grid-template-columns: 1fr 405px 1fr;
+			grid-template-rows: auto;
+			grid-template-areas: "likes pics dislikes"
+			  }
+
+		#favs  {
+			margin-right: 10px;
+
+
+		}	
+
+		#hates {
+			margin-left:10px;
+		}
+
+
+		.small {
+			height: 200px;
+			width: 200px;
+			border: 5px solid black;
+			border-radius: 25px;
+			
+		}
+
+		.single30x70 {
+			display: grid;
+			grid-template-columns: 3fr 7fr;
+
+		}	
+			}
+					/* end of the screen size instructions */		}
+		
+		#fullpage {
+			font-family: "trebuchet MS", helvetica, sans-serif;
+			}
+
+		.bluebody  {
+			border: 3px solid black;
+			border-radius: 10px;
+			padding: 10px;
+			background-color: rgba(150,150,255,.9);
+
+		}	
+
+		
+
+		.link  {
+			text-decoration: none;
+		}
+		
+
+		.alignleft {
+			float:left;
+			margin-right: 20px;
+		}
+
+		.alignright  {
+			float: right;
+			margin-left: 20px;
+		}
+
+		
+
+/*navigation*/			
+		#navbar   {
+			
+			margin: auto;
+	     	float: right;
+			z-index: 1;
+			font-size: 16px;
+			line-height:26px;
+			background-color: gold;
+			position: absolute;
+			top: 12px;
+			right: 0px;
+			width: auto;
+			height: auto;
+			margin-right: 18px;
+			border: 3px solid black;
+			border-radius: 10px;
+			padding: 10px;
+			
+
+
+			}
+
+		#header {
+			display: inline-flex;
+			margin: auto;
+			width: auto;
+			height: 180px;
+			justify-content: center;				
+		}
+/*look*/
+		#main {
+			margin-top: 0px;
+			list-style-type: none
+		}
+
+		#aside {
+			margin-top: 0px;
+			background-color: lightgrey;
+			font-size: .8em;
+			font-style: italic;
+			padding: 20px;
+		}
+
+		#footer {
+			font-size: .8em;
+			font-style: italic;
+
+		}
+
+		#mainimage  {
+			object-fit: cover;
+			object-position: left;
+
+			}
+		#backtotop  {
+			text-align: center;
+		
+	}
+		#favs     {
+			grid-area: likes;
+			border: 5px solid blue;
+			text-align: center;
+			color: blue;
+			margin-top: 20px;
+			border-radius: 10px;
+
+
+		}
+
+		#hates	{
+			grid-area: dislikes;
+			border: 5px solid red;
+			color:red;
+			text-align: center;
+			margin-top:20px;
+			border-radius: 10px;
+		}
+		 #favstext 	{
+		 	list-style-type: none;
+		 	font-family: impact, sans-serif;
+		 	font-size: 1.2em;
+		 	margin-right: 40px;
+		 	line-height: 20px;
+		 
+
+
+		 }
+		 #hatestext	{
+		 	list-style-type: none;
+		 	font-family: impact, sans-serif;
+		 	font-size: 1.2em;
+		 	margin-right: 40px;
+		 	line-height: 20px;
+
+		 }
+
+		 #botpicbox	{
+		 	grid-area: pics;
+		 	margin-top:20px;
+		 }
+		 #favsheader	{
+
+		 }
+		 #hatesheader	{
+
+		 }
+
+		 .divider	{
+		 	border: 3px solid black;
+		 }		
+					
+	

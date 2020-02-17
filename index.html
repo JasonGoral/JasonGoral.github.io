@@ -7,180 +7,8 @@
   <meta name="keywords" content="HTML,CSS">
   <meta name="author" content="Jason Goral">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<style>
-		#fullpage {
-			font-family: "trebuchet MS", helvetica, sans-serif;
-			}
-
-		.bluebody  {
-			border: 3px solid black;
-			border-radius: 10px;
-			padding: 10px;
-			background-color: rgba(150,150,255,.9);
-
-		}	
-
-		#likedis	{
-			display:grid;
-			grid-template-columns: 1fr 405px 1fr;
-			grid-template-rows: auto;
-			grid-template-areas: "likes pics dislikes"
-			
-
-			}
-
-		.link  {
-			text-decoration: none;
-		}
-		
-		/*picture sizes*/
-		#small {
-			height: 200px;
-			width: 200px;
-			border: 5px solid black;
-			border-radius: 25px;
-			
-		}
-
-		.alignleft {
-			float:left;
-			margin-right: 20px;
-		}
-
-		.alignright  {
-			float: right;
-			margin-left; 20px
-		}
-
-/*containers*/
-		#single30x70 {
-			display: grid;
-			grid-template-columns: 3fr 7fr;
-
-		}	
-
-/*navigation*/			
-		#navbar   {
-			
-			margin: auto;
-	     	float: right;
-			z-index: 1;
-			font-size: 16px;
-			line-height:26px;
-			background-color: gold;
-			position: absolute;
-			top: 12px;
-			right: 0px;
-			width: auto;
-			height: auto;
-			margin-right: 18px;
-			border: 3px solid black;
-			border-radius: 10px;
-			padding: 10px;
-			
-
-
-			}
-
-		#header {
-			display: inline-flex;
-			margin: auto;
-			width: auto;
-			height: 180px;
-			justify-content: center;				
-		}
-/*look*/
-		#main {
-			margin-top: 0px;
-			list-style-type: none
-		}
-
-		#aside {
-			margin-top: 0px;
-			background-color: lightgrey;
-			font-size: .8em;
-			font-style: italic;
-			padding: 20px;
-		}
-
-		#footer {
-			font-size: .8em;
-			font-style: italic;
-
-		}
-
-		#mainimage  {
-			object-fit: cover;
-			object-position: left;
-
-			}
-		#backtotop  {
-			text-align: center;
-		
-	}
-		#favs     {
-			grid-area: likes;
-			border: 5px solid blue;
-			text-align: center;
-			color: blue;
-			margin-right: 10px;
-			margin-top: 20px;
-			border-radius: 10px;
-
-
-		}
-
-		#hates	{
-			grid-area: dislikes;
-			border: 5px solid red;
-			color:red;
-			text-align: center;
-			margin-left: 10px;
-			margin-top:20px;
-			border-radius: 10px;
-		}
-		 #favstext 	{
-		 	list-style-type: none;
-		 	font-family: impact, sans-serif;
-		 	font-size: 1.2em;
-		 	margin-right: 40px;
-		 	line-height: 20px;
-		 
-
-
-		 }
-		 #hatestext	{
-		 	list-style-type: none;
-		 	font-family: impact, sans-serif;
-		 	font-size: 1.2em;
-		 	margin-right: 40px;
-		 	line-height: 20px;
-
-		 }
-
-		 #botpicbox	{
-		 	grid-area: pics;
-		 	margin-top:20px;
-		 }
-		 #favsheader	{
-
-		 }
-		 #hatesheader	{
-
-		 }
-
-		 .divider	{
-		 	border: 3px solid black;
-		 }
-		
-
-		
-
-			
-			
-			
-			
-	</style>
+  <link rel="stylesheet" type="text/css" href="css/mainpage.css">
+	
 	
 		</head>
 		<body>
@@ -189,7 +17,7 @@
 				<div id="header">
 
 					<div>
-					<img src="images/lukajellies2.jpg" id=mainimage alt = "image of luka with jellyfish" width="100%" height="165" /> 
+					<img src="images/lukajellies2.jpg" id="mainimage" alt = "image of luka with jellyfish" width="100%" height="165" /> 
 					</div>
 
 				   
@@ -207,7 +35,7 @@
 			<!--end of headerflexbox-->
 
 		<!--wrapper for body-->		
-		<div id="single30x70">
+		<div class="single30x70">
 			<!--forward and intro-->	
 			<div id="aside">	
 				<h3 id="asidetitle"> Forward </h3>
@@ -227,13 +55,13 @@
 	<!--mainbody-->		
 	<ul id=main>
 		<li class="bluebody">
-			<image id="small" class="alignleft" src="images/lukasmart.jpg" alt="pic of luka being smart" />
+			<image class="small largepic alignleft" src="images/lukasmart.jpg" alt="pic of luka being smart" />
 			Very tech savvy, able to open up new features on parents' devices they didn't even know existed!
 		</li><br>
 		<li class="bluebody">
 			Graduate of the Living and Learning with Baby class offered by Toronto Public Health and currently enrolled in the Ready, Set, Grow, class at the Waterfront Neighbourhood Centre.
 	    </li><br>
-		<li class="bluebody"><image id="small" class="alignright" src="images/lukaglow.jpg" alt="pic of luka lit up" />
+		<li class="bluebody"><image class="small largepic alignright" src="images/lukaglow.jpg" alt="pic of luka lit up" />
 			Some of his favourites include watermelon, bright lights, anything with a screen on it and eating up floor snacks!
 		</li><br>
 		<li class="bluebody">
@@ -242,12 +70,12 @@
 		<li class="bluebody">
 			Extremely fine hair! You can identify anything near him with a static charge by what his head is pointing at.
 		</li><br>
-		<li class="bluebody"><image id="small" class="alignright" src="images/lukajellies.jpg" alt="pic of jellies" />Favourite words are Dada, no, yes, woah, and some kind of inward grunt sound that is likely not English.
+		<li class="bluebody"><image class="small largepic alignright" src="images/lukajellies.jpg" alt="pic of jellies" />Favourite words are Dada, no, yes, woah, and some kind of inward grunt sound that is likely not English.
 		</li><br>
 		<li class="bluebody">
 				<strong>OCT 28 2018</strong> - Luka enters the world at Mount Sinai Hospital in Toronto, Ontario.
 			</li><br>
-			<li class="bluebody"><image id="small" class="alignleft" src="images/lukasanta.jpg" alt="pic of luka with Santa" />
+			<li class="bluebody"><image class="small largepic alignleft" src="images/lukasanta.jpg" alt="pic of luka with Santa" />
 				<strong>DEC 25 2018</strong> - Lukas' first Christmas!
 			</li><br>
 			<li class="bluebody">
@@ -255,6 +83,9 @@
 			</li><br>
 			<li class="bluebody">
 				<strong>NOV 25 2019</strong> - Proud owner of his own website - you're looking at it now!
+			</li><br>
+			<li class="bluebody">
+				<strong>FEB 12 2020</strong> - Lukas First Steps! He's a walker, watch your toes and floor valuables.
 			</li>
 
 	</ul>
@@ -290,12 +121,12 @@
 		</div>
 
 		<div id=botpicbox>
-			<img id=botpic src="images/lukacoolglasses.jpg" alt="pic not available">
-			<img id=botpic src="images/karenlukafall.jpg" alt="pic not available">
-			<img id=botpic src="images/sunnyluka.jpg" alt="pic not available">
-			<img id=botpic src="images/chuclan.jpg" alt="pic not available">
-			<img id=botpic src="images/karenlukaflowers.jpg" alt="pic not available">
-			<img id=botpic src="images/karenlukatreelights.jpg" alt="pic not available">
+			<img class="small smallpic" src="images/lukacoolglasses.jpg" alt="pic not available">
+			<img class="small smallpic" src="images/karenlukafall.jpg" alt="pic not available">
+			<img  class="small smallpic" src="images/sunnyluka.jpg" alt="pic not available">
+			<img class="smallpic small" src="images/chuclan.jpg" alt="pic not available">
+			<img class="small smallpic" src="images/karenlukaflowers.jpg" alt="pic not available">
+			<img class="small smallpic" src="images/karenlukatreelights.jpg" alt="pic not available">
 
 		</div>
 	</div>	
