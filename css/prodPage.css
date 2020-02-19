@@ -1,0 +1,241 @@
+		/*for cell phones*/
+@media only screen and (max-width: 767px) {
+
+	.yespic {
+		width: 100%
+	}
+
+											}
+
+
+			/*for larger than cellphones*/							  
+@media only screen and (min-width: 768px) 	{
+
+	/*wrapper for good products*/
+	.yescontainer	{
+		flex: 1;
+		display:flex;
+		max-width: 1200px;
+		height: 200px;
+		align-items: center;
+		padding-bottom: 10px;		
+}
+											}
+
+/*end of special screen sizes*/
+
+
+	#fullpage {
+			font-family: "trebuchet MS", helvetica, sans-serif;
+			}
+
+	/*navigation*/			
+		#navbar   {
+			
+			margin: auto;
+	     	float: right;
+			z-index: 1;
+			font-size: 16px;
+			line-height:26px;
+			background-color: gold;
+			position: absolute;
+			top: 12px;
+			right: 0px;
+			width: auto;
+			height: auto;
+			margin-right: 18px;
+			border: 3px solid black;
+			border-radius: 10px;
+			padding: 10px;
+			
+
+
+			}
+
+		#header {
+			display: inline-flex;
+			margin: auto;
+			width: auto;
+			height: 180px;
+			justify-content: center;				
+		}	
+
+		#maingridcon {
+	
+	
+					}
+											
+
+
+		#mainimage  {
+			object-fit: cover;
+			object-position: left;
+					}	
+
+	
+
+		#explan  {
+			background-color: lightgrey;
+			overflow: hidden;
+			font-style: italic;
+			width: 100%;
+		}
+
+		#happyborder {
+			
+			height: 150px;
+			width: 150px;
+			border: 10px solid blue;
+			border-radius: 50%
+
+		}
+
+		#happypic	{
+		width: 50%
+		
+		}
+
+		#sadpic	{
+		width: 50%;
+				}
+
+		#sadborder {
+			height: 150px;
+			width: 150px;
+			border: 10px solid red;
+			border-radius: 50%
+		}
+
+		#thumbnailcontent	{
+			display; flex;
+			flex-direction: row;
+
+		}
+x
+
+	.conbox {
+		flex: 1;
+		background-color: rgb(250 250 110);
+		font-weight: bold;
+		height: 200px;
+		overflow: hidden;
+
+	}
+	.context	{
+		padding:10px;
+		line-height: 25px;
+		font-size: .8em;
+		font-weight: bold; 
+		letter-spacing: .1em;
+		margin-left: 10px;
+		}
+
+	.depthcontainer	{
+			border: 3px solid grey;
+			border-radius: 10px;
+			padding: 10px;
+		}
+
+	.halfSize	{
+		width: 50%;
+	}	
+
+	.happytext  {
+			
+		}
+
+	.indepthheader	{
+			color: blue;
+		}
+
+	.leftfloat	{
+			float: left;
+			height: 200px;
+			width:200px;
+			padding-right: 15px;
+		}
+
+	.link	{
+		text-decoration: none;
+	}
+
+	.nono	{
+			position: relative;
+			height: 60px;
+			width: 60px;
+			left: 30px;
+			bottom: 85px;
+			z-index: 2;
+			border: 3px solid red;
+			border-radius: 50%;
+			margin-top: 0px;
+			margin-right: 0px;
+
+		}
+			
+
+	.probox	{
+		flex: 1;
+		background-color: rgb(110 250 250);
+		font-weight: bold;
+		height: 200px;
+		overflow: hidden;
+
+	}
+
+	.protext {
+		padding:10px;
+		line-height: 25px;
+		font-size: .8em;
+		font-weight: bold; 
+		letter-spacing: .1em;
+		margin-left: 10px
+
+		
+
+	}
+
+		.ratingbox	{
+			display: grid;
+			grid-template-columns: 1fr 2fr;
+			grid-template-rows: 75px 40px;
+			grid-template-areas:
+			 "name comment"
+			 "starrating starrating";
+			 max-width: 500px;
+			 border: 3px solid yellow;
+			 margin: auto;
+			}
+
+
+	.roundpic	{
+		border-radius: 50%;
+	}
+
+	.thumbtitle	{
+
+		}
+
+
+
+	.yespic   {
+		height: auto;	
+	}
+
+	.yesyes	{
+			position: relative;
+			height: 60px;
+			width: 60px;
+			left: 30px;
+			bottom: 85px;
+			z-index: 2;
+			border: 3px solid blue;
+			border-radius: 50%;
+			margin-top: 0px;
+			margin-right: 0px;
+
+
+		}
+	
+
+

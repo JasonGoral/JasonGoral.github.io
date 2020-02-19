@@ -3,7 +3,7 @@
 @media only screen and (max-width: 767px) {
 
 		#likedis	{
-			display: inline-block;
+			display: inline;
 
 			}
 		#favs  {
@@ -22,9 +22,10 @@
 		 }
 
 		 .smallpic  {
-		 	width: 50%;
+		 	width: 40%;
 		 	border: 5px solid black;
 			border-radius: 25px;
+			margin: 5px;
 		 }
 
 		 .largepic
@@ -32,16 +33,30 @@
 		  	width: 100%;
 		  	border: 5px solid black;
 			border-radius: 25px;
+			margin: 5px;
 		  }
+						
+		#botpicbox	{
+
+			display: inline;
+			margin: auto;
+		}
 							
 										  }
 
 			/*for larger than cellphones*/							  
 @media only screen and (min-width: 768px) 	{
 		
+
+		 #botpicbox	{
+		 	display: inline;
+		 	grid-area: pics;
+		 	margin-top:20px;
+		 }
+
 		#likedis	{
 			display:grid;
-			grid-template-columns: 1fr 405px 1fr;
+			grid-template-columns: 1fr 450px 1fr;
 			grid-template-rows: auto;
 			grid-template-areas: "likes pics dislikes"
 			  }
@@ -62,6 +77,7 @@
 			width: 200px;
 			border: 5px solid black;
 			border-radius: 25px;
+			margin: 5px;
 			
 		}
 
@@ -201,10 +217,6 @@
 
 		 }
 
-		 #botpicbox	{
-		 	grid-area: pics;
-		 	margin-top:20px;
-		 }
 		 #favsheader	{
 
 		 }
