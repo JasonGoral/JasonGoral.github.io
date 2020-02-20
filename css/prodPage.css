@@ -2,10 +2,49 @@
 @media only screen and (max-width: 767px) {
 
 	.yespic {
+		width: 60%;	
+	}
+
+	.yescontainer	{
+		width: 100%;
+		flex: 1;
+		display:flex;
+		flex-direction: column;
+		align-items: center;
+		padding-bottom: 10px;		
+}
+
+	.yespic   {
+		display: block;
+		width: 70%;
+		margin: auto;	
+	}
+
+	.imBox	{
 		width: 100%
 	}
 
-											}
+
+	.yesyes	{
+			float: left;
+			height: 60px;
+			width: 60px;
+		
+			z-index: 2;
+			border: 3px solid blue;
+			border-radius: 50%;
+			margin-top: 0px;
+			margin-right: 0px;
+
+
+		}
+
+								
+		.thumbtitle	{
+			text-align: center;
+		}		
+
+							}
 
 
 			/*for larger than cellphones*/							  
@@ -20,6 +59,26 @@
 		align-items: center;
 		padding-bottom: 10px;		
 }
+
+	.yespic   {
+		height: auto;	
+	}
+
+
+	.yesyes	{
+			position: relative;
+			height: 60px;
+			width: 60px;
+			left: 30px;
+			bottom: 85px;
+			z-index: 2;
+			border: 3px solid blue;
+			border-radius: 50%;
+			margin-top: 0px;
+			margin-right: 0px;
+
+
+		}
 											}
 
 /*end of special screen sizes*/
@@ -212,30 +271,10 @@ x
 		border-radius: 50%;
 	}
 
-	.thumbtitle	{
-
-		}
 
 
 
-	.yespic   {
-		height: auto;	
-	}
 
-	.yesyes	{
-			position: relative;
-			height: 60px;
-			width: 60px;
-			left: 30px;
-			bottom: 85px;
-			z-index: 2;
-			border: 3px solid blue;
-			border-radius: 50%;
-			margin-top: 0px;
-			margin-right: 0px;
-
-
-		}
 	
 
 

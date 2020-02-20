@@ -1,3 +1,24 @@
+
+		/*for cell phones*/
+@media only screen and (max-width: 767px) {
+	.target {
+		width: 100%;
+	}
+
+	.flexbuttons   {
+		flex-direction: column;
+	}
+}
+
+
+			/*for larger than cellphones*/							  
+@media only screen and (min-width: 768px) 	{
+
+	.target	{
+		width: 25%;
+	}
+}
+
 #wholepage {
 	border: 3px solid black;
 	font-family: "Gill Sans", Helvetica, sans-serif;
@@ -52,10 +73,7 @@
 
 .flexbuttons  {
 	padding: 10px;
-	display: flex;
-
-	
-
+	display: flex;	
 }
 
 .unpicked  {
@@ -63,7 +81,6 @@
 	margin: auto;
 	border: 5px dashed grey;
 	color: black;
-	width: 25%;
 	background-color: lightgrey;
 	border-radius: 25px;
 }
@@ -73,7 +90,6 @@
 	margin: auto;
 	border: 5px inset red;
 	color: darkblue;
-	width: 25%;
 	background-color: yellow;
 	border-radius: 25px;
 }
@@ -83,7 +99,6 @@
 	margin: auto;
 	border: 5px outset blue;
 	color: grey;
-	width: 25%;
 	background-color: lightblue;
 	border-radius: 25px;
 	
