@@ -26,35 +26,48 @@
 
 
 	.yesyes	{
-			float: left;
 			height: 60px;
 			width: 60px;
-		
+		    position: absolute;
 			z-index: 2;
 			border: 3px solid blue;
 			border-radius: 50%;
-			margin-top: 0px;
-			margin-right: 0px;
+		}
 
+		.nono	{
+			position: absolute;
+			height: 60px;
+			width: 60px;
+			z-index: 2;
+			border: 3px solid red;
+			border-radius: 50%;
 
 		}
+			
 
 								
 		.thumbtitle	{
 			text-align: center;
 		}		
 
-							}
+							
 
+		.probox	{
+			width: 70%
+				}
 
+		.conbox {
+			width: 70%;
+		}	
+							}	
 			/*for larger than cellphones*/							  
+		
 @media only screen and (min-width: 768px) 	{
 
 	/*wrapper for good products*/
 	.yescontainer	{
-		flex: 1;
-		display:flex;
-		max-width: 1200px;
+		display: flex;
+		max-width: 800px;
 		height: 200px;
 		align-items: center;
 		padding-bottom: 10px;		
@@ -79,6 +92,21 @@
 
 
 		}
+
+		.nono	{
+			position: relative;
+			height: 60px;
+			width: 60px;
+			left: 30px;
+			bottom: 85px;
+			z-index: 2;
+			border: 3px solid red;
+			border-radius: 50%;
+			margin-top: 0px;
+			margin-right: 0px;
+
+		}
+			
 											}
 
 /*end of special screen sizes*/
@@ -120,8 +148,9 @@
 		}	
 
 		#maingridcon {
-	
-	
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
 					}
 											
 
@@ -142,25 +171,25 @@
 
 		#happyborder {
 			
-			height: 150px;
-			width: 150px;
+			height: 75px;
+			width: 75px;
 			border: 10px solid blue;
 			border-radius: 50%
 
 		}
 
 		#happypic	{
-		width: 50%
+		width: 20%
 		
 		}
 
 		#sadpic	{
-		width: 50%;
+		width: 20%;
 				}
 
 		#sadborder {
-			height: 150px;
-			width: 150px;
+			height: 75px;
+			width: 75px;
 			border: 10px solid red;
 			border-radius: 50%
 		}
@@ -170,7 +199,7 @@
 			flex-direction: row;
 
 		}
-x
+
 
 	.conbox {
 		flex: 1;
@@ -178,15 +207,17 @@ x
 		font-weight: bold;
 		height: 200px;
 		overflow: hidden;
-
+		width: 350px;
 	}
 	.context	{
-		padding:10px;
+		padding:15px;
 		line-height: 25px;
 		font-size: .8em;
 		font-weight: bold; 
 		letter-spacing: .1em;
 		margin-left: 10px;
+		font-family: 'Schoolbell', impact;
+		font-size: 1.1em;
 		}
 
 	.depthcontainer	{
@@ -196,7 +227,7 @@ x
 		}
 
 	.halfSize	{
-		width: 50%;
+		width: 20%;
 	}	
 
 	.happytext  {
@@ -218,20 +249,7 @@ x
 		text-decoration: none;
 	}
 
-	.nono	{
-			position: relative;
-			height: 60px;
-			width: 60px;
-			left: 30px;
-			bottom: 85px;
-			z-index: 2;
-			border: 3px solid red;
-			border-radius: 50%;
-			margin-top: 0px;
-			margin-right: 0px;
-
-		}
-			
+	
 
 	.probox	{
 		flex: 1;
@@ -239,17 +257,18 @@ x
 		font-weight: bold;
 		height: 200px;
 		overflow: hidden;
-
+		width: 350px;
 	}
 
 	.protext {
-		padding:10px;
+		padding:15px;
 		line-height: 25px;
 		font-size: .8em;
 		font-weight: bold; 
 		letter-spacing: .1em;
-		margin-left: 10px
-
+		margin-left: 10px;
+		font-family: 'Schoolbell', impact;
+		font-size: 1.1em;
 		
 
 	}
@@ -269,6 +288,7 @@ x
 
 	.roundpic	{
 		border-radius: 50%;
+		width: 75px;
 	}
 
 

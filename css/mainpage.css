@@ -7,13 +7,15 @@
 
 			}
 		#favs  {
-			width: 100%;
+			width: 80%;
+			margin: auto;
 
 
 		}	
 
 		#hates {
-			width: 100%;
+			width: 80%;
+			margin: auto;
 		}
 
 		 #botpicbox {
@@ -37,9 +39,9 @@
 		  }
 						
 		#botpicbox	{
-
 			display: inline;
-			margin: auto;
+			align-items: center;
+
 		}
 							
 										  }
@@ -91,6 +93,7 @@
 		
 		#fullpage {
 			font-family: "trebuchet MS", helvetica, sans-serif;
+			font-size: 1.3em;
 			}
 
 		.bluebody  {
@@ -98,7 +101,7 @@
 			border-radius: 10px;
 			padding: 10px;
 			background-color: rgba(150,150,255,.9);
-
+			font-size: 1.3em;
 		}	
 
 		
@@ -154,18 +157,19 @@
 		#main {
 			margin-top: 0px;
 			list-style-type: none
+
 		}
 
 		#aside {
 			margin-top: 0px;
 			background-color: lightgrey;
-			font-size: .8em;
+			font-size: 1.1em;
 			font-style: italic;
 			padding: 20px;
 		}
 
 		#footer {
-			font-size: .8em;
+			font-size: 1.1em;
 			font-style: italic;
 
 		}
@@ -186,7 +190,7 @@
 			color: blue;
 			margin-top: 20px;
 			border-radius: 10px;
-
+			
 
 		}
 
@@ -197,10 +201,11 @@
 			text-align: center;
 			margin-top:20px;
 			border-radius: 10px;
+
 		}
 		 #favstext 	{
 		 	list-style-type: none;
-		 	font-family: impact, sans-serif;
+		 	font-family: 'Schoolbell', impact, sans-serif;
 		 	font-size: 1.2em;
 		 	margin-right: 40px;
 		 	line-height: 20px;
@@ -210,7 +215,7 @@
 		 }
 		 #hatestext	{
 		 	list-style-type: none;
-		 	font-family: impact, sans-serif;
+		 	font-family: 'Schoolbell', impact, sans-serif;
 		 	font-size: 1.2em;
 		 	margin-right: 40px;
 		 	line-height: 20px;
