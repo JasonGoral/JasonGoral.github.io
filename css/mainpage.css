@@ -2,6 +2,10 @@
 		/*for cell phones*/
 @media only screen and (max-width: 767px) {
 
+		#aside {
+			font-size: .8em;
+		}
+
 		#likedis	{
 			display: inline;
 
@@ -48,6 +52,9 @@
 
 			/*for larger than cellphones*/							  
 @media only screen and (min-width: 768px) 	{
+			#aside {
+			font-size: 1.2em;
+		}
 		
 
 		 #botpicbox	{
@@ -102,6 +109,7 @@
 			padding: 10px;
 			background-color: rgba(150,150,255,.9);
 			font-size: 1.3em;
+			text-decoration: none;
 		}	
 
 		
@@ -121,39 +129,70 @@
 			margin-left: 20px;
 		}
 
-		
+	#menuBut	{
+		height: 100%;
+		width: 100%;
 
-/*navigation*/			
+	}	
+
+	#menuButX	{
+		height: 100%;
+		width: 100%;
+
+	}	
+
+	#navButton	{
+		position: absolute;
+		height: 80px;
+		width: 80px;
+		right: 40px;
+		top: 45px;
+		float: right;
+		margin: auto;
+		z-index: 1;
+	}
+
+/*navigation	*/	
 		#navbar   {
 			
 			margin: auto;
 	     	float: right;
-			z-index: 1;
-			font-size: 16px;
-			line-height:26px;
+			z-index: 2;
 			background-color: gold;
 			position: absolute;
 			top: 12px;
 			right: 0px;
 			width: auto;
 			height: auto;
-			margin-right: 18px;
 			border: 3px solid black;
 			border-radius: 10px;
 			padding: 10px;
-			
-
-
 			}
 
-		#header {
-			display: inline-flex;
-			margin: auto;
-			width: auto;
-			height: 180px;
-			justify-content: center;				
+		.ancBox	{
+			font-family: "Schoolbell";
+			font-size: 5vh;
+			line-height:7vh;
+			padding: 13px;
+			border: 5px solid red;
+			border-radius: 25px;
+			margin: 5px;
 		}
-/*look*/
+
+		#closeBut	{
+			height: 35px;
+			width: 35px;
+			position: absolute;
+			right: 2px;
+			top: 2px;
+			border-radius: 5px;
+
+		}
+
+		.topAncBox	{
+			margin-top: 30px;
+		}
+
 		#main {
 			margin-top: 0px;
 			list-style-type: none
@@ -163,9 +202,9 @@
 		#aside {
 			margin-top: 0px;
 			background-color: lightgrey;
-			font-size: 1.1em;
 			font-style: italic;
 			padding: 20px;
+			border-radius: 25px;
 		}
 
 		#footer {
