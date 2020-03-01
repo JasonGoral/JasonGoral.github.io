@@ -141,4 +141,13 @@
 		align-content: top;
 	}
 
+	#otherGen {
+		transform: scale(0.9); 
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+		align-content: top;
+	}
+
 	/*end of flexwrappers*/

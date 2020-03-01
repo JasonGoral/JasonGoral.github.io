@@ -8,7 +8,7 @@
 
 		#likedis	{
 			display: inline;
-
+			margin-top: 30px;
 			}
 		#favs  {
 			width: 80%;
@@ -43,7 +43,8 @@
 		  }
 						
 		#botpicbox	{
-			display: inline;
+			margin-left: 35px;
+			display: inline-block;
 			align-items: center;
 
 		}
@@ -218,6 +219,11 @@
 			object-position: left;
 
 			}
+
+		#topPic	{
+			width: auto;
+		}	
+
 		#backtotop  {
 			text-align: center;
 		
@@ -262,9 +268,11 @@
 		 }
 
 		 #favsheader	{
+		 	margin: 30px;
 
 		 }
 		 #hatesheader	{
+		 	margin: 30px;
 
 		 }
 
