@@ -45,7 +45,6 @@
 		}
 			
 
-								
 		.thumbtitle	{
 			text-align: center;
 		}		
@@ -171,8 +170,8 @@
 
 		#happyborder {
 			
-			height: 75px;
-			width: 75px;
+			height: 55px;
+			width: 55px;
 			border: 10px solid blue;
 			border-radius: 50%
 
@@ -188,8 +187,8 @@
 				}
 
 		#sadborder {
-			height: 75px;
-			width: 75px;
+			height: 55px;
+			width: 55px;
 			border: 10px solid red;
 			border-radius: 50%
 		}
@@ -201,6 +200,10 @@
 		}
 
 
+		.smallText  {
+			font-size: 2.5vw;
+		}
+					
 	.conbox {
 		flex: 1;
 		background-color: rgb(250 250 110);
@@ -276,12 +279,13 @@
 		.ratingbox	{
 			display: grid;
 			grid-template-columns: 1fr 2fr;
-			grid-template-rows: 75px 40px;
+			grid-template-rows: 1px auto;
 			grid-template-areas:
 			 "name comment"
 			 "starrating starrating";
 			 max-width: 500px;
-			 border: 3px solid yellow;
+			 border: 5px solid yellow;
+			 border-radius: 25px;
 			 margin: auto;
 			}
 
@@ -291,7 +295,14 @@
 		width: 75px;
 	}
 
+	.starBox	{
+		grid-area: starrating;
+	}
 
+	.starPics	{
+	width: 100%;
+
+	}
 
 
 
