@@ -1,4 +1,12 @@
 /*navigation bar*/
+		#header {
+			display: inline-flex;
+			margin: auto;
+			width: auto;
+			height: 180px;
+			justify-content: center;				
+		}	
+
 	#menuBut	{
 		height: 100%;
 		width: 100%;

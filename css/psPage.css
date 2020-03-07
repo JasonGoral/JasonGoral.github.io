@@ -21,6 +21,7 @@
 
 	.bigPic	{
 		width: 100%;
+		border-radius: 25px;
 	}
 		#fullpage {
 			font-family: "trebuchet MS", helvetica, sans-serif;

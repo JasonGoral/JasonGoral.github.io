@@ -30,26 +30,6 @@
 		padding-top: 40px;
 	}	
 
-	#navbar   {
-			
-			margin: auto;
-	     	float: right;
-			z-index: 1;
-			font-size: 16px;
-			line-height:26px;
-			background-color: gold;
-			position: absolute;
-			top: 12px;
-			right: 0px;
-			width: auto;
-			height: auto;
-			margin-right: 18px;
-			border: 3px solid black;
-			border-radius: 10px;
-			padding: 10px;
-			
-			}	
-
 	.smallpiccenter	{
 		width: 200px;
 		height: 200px;
@@ -85,10 +65,7 @@
 		text-align: center;
 		}
 
-#mainimage  {
-			object-fit: cover;
-			object-position: left;
-		}
+
 	#parentheader {
 		padding-top: 15px;
 		text-indent: 30px;
