@@ -102,13 +102,16 @@
 		#fullpage {
 			font-family: "trebuchet MS", helvetica, sans-serif;
 			font-size: 1.3em;
+			background-color: #000099;
 			}
 
+
 		.bluebody  {
+
 			border: 3px solid black;
 			border-radius: 10px;
 			padding: 10px;
-			background-color: rgba(150,150,255,.9);
+			background-color: #6666ff;
 			font-size: 1.3em;
 			text-decoration: none;
 		}	
@@ -162,7 +165,8 @@
 			}
 
 		#topPic	{
-			width: auto;
+			display: flex;
+			
 		}	
 
 		#backtotop  {
@@ -210,15 +214,16 @@
 
 		 #favsheader	{
 		 	margin: 30px;
+		 	font-family: 'Fredoka One', cursive;
 
 		 }
 		 #hatesheader	{
 		 	margin: 30px;
+		 	font-family: 'Fredoka One', cursive;
 
 		 }
 
 		 .divider	{
 		 	border: 3px solid black;
 		 }		
-					
-	
+

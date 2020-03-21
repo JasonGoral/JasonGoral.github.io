@@ -1,10 +1,9 @@
 /*navigation bar*/
 		#header {
 			display: inline-flex;
-			margin: auto;
-			width: auto;
-			height: 180px;
-			justify-content: center;				
+			width: 100%;
+			height: auto;	
+			border-radius: 25px;			
 		}	
 
 	#menuBut	{
@@ -78,9 +77,7 @@
 
 			}
 
-		#topPic	{
-			width: auto;
-		}	
+	
 
 		#backtotop  {
 			text-align: center;
@@ -91,6 +88,36 @@
 	 	display: flex;
 	 	flex-wrap: wrap;
 
+	 }
+
+	  #lukaFace	{
+		 
+
+		 }
+
+		 #faceSize	{
+		 	width: 30%;
+		 	height: auto;
+		 	float: left;
+		 }
+
+		 #titleText	{
+		 	width: 100%;
+		 	background-image: linear-gradient(to right, #6666ff, #ccccff);
+		 	margin-bottom: 4px;
+		 	font-size: 2.8vw;
+		 	border-radius: 25px;
+		 	font-family: 'Fredoka One', cursive;
+		 
+		 	
+		 }
+
+
+					
+	
+
+	 .openNav	{
+	 	
 	 }
 
 	 /*end of the navigation*/
