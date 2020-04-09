@@ -1,11 +1,5 @@
 /*navigation bar*/
-		#header {
-			display: inline-flex;
-			width: 100%;
-			height: auto;	
-			border-radius: 25px;	
-			justify-content: center;		
-		}	
+		
 
 	#menuBut	{
 		height: 100%;
@@ -96,16 +90,10 @@
 		 	float: left;
 		 }
 
-		 #titleText	{
-		 	width: 100%;
-		 	background-image: linear-gradient(to right, #6666ff, #ccccff);
-		 	margin-bottom: 4px;
-		 	font-size: 2.8vw;
-		 	border-radius: 25px;
-		 	font-family: 'Fredoka One', cursive;
-		 
-		 	
-		 }
+		#largeSize  {
+			width: 100%;
+			height: auto;
+		}
 
 
 	.menuPng	{

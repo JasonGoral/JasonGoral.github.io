@@ -8,8 +8,11 @@
 
 																				
 #fullpage {
+	background-color: #ff0033;
+	text-align: center;
 			font-family: "trebuchet MS", helvetica, sans-serif;
 			}
+
 
 
 	p {
@@ -26,7 +29,7 @@
 		}
 
 	.breaker  {
-		border-bottom: 2px solid black;
+	background-color: #ff0033;
 		padding-top: 40px;
 	}	
 
@@ -47,15 +50,35 @@
 			background-color: gold;
 		}
 	.goralid   {
-		background-color: lightblue;
+		background-color: #ccccff;
 
 	}
 
 	.chuid		{
-		background-color: #ffccff;
+		background-color: #ffcccc;
 	}
 
-	
+	.redback	{
+		background-color: #ff0033;
+	}
+
+		#titText  	{
+			margin-right: 25px;
+			
+			font-size: 6vw;
+		}
+
+		#header {
+			padding-top: 50px;
+		 	width: 100%;
+		 	background-image: linear-gradient(to top, #ff0033, #ffcccc);
+			font-family: 'Fredoka One', cursive;	
+			width: 100%;
+			height: auto;
+			justify-content: center;	
+		}	
+
+
 	#idcard	{
 		width:225px;
 		border: 3px solid black;
@@ -67,18 +90,16 @@
 
 
 	#parentheader {
-		padding-top: 15px;
-		text-indent: 30px;
+		
 
 	}
 
 	#lukaheader  {
-		padding-top: 20px;
-		text-indent: 30px;
+		
 	}
 
 	#grandheader  {
-		text-indent: 30px;
+		
 
 
 	}
@@ -88,6 +109,7 @@
 
 	#backtotop  {
 		text-align: center;
+		color: white;
 
 	}
 
